@@ -8,6 +8,6 @@ class HomeControler extends Controller
 {
 	public function __invoke()
 	{
-		return "Bienvenido index";
+		return view('home');
 	}
 }

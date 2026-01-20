@@ -8,7 +8,7 @@ class PostController extends Controller
 {
 	public function index()
 	{
-		return 'Post index';
+		return view('post.index');
 	}
 	public function create()
 	{
@@ -16,8 +16,9 @@ class PostController extends Controller
 	}
 	public function categoria($post, $categoria = null)
 	{
-		if ($categoria)
-			return "Post {$post}  de {$categoria} Controller";
-		return 'Post con número ' . $post . ' Controller';
+		return view('post.categoria', compact('post','categoria'));
+		//if ($categoria)
+		//	return "Post {$post}  de {$categoria} Controller";
+		//return 'Post con número ' . $post . ' Controller';
 	}
 }
