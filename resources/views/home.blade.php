@@ -11,12 +11,12 @@
  <title>Laravel 12</title>
  </head>
 <body>
-<x-alerta type="warning">
+<x-alert2 type="warning">
   <x-slot name="titulo">
   Este es el titulo slot
   </x-slot>
   Este es el slot
-</x-alerta>
+</x-alert2>
 
 </body>
 </html>
