@@ -2,15 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeControler;
+use App\Http\Controllers\PostController;
 
-Route::get('/', [HomeControler::class, 'index']);
+Route::get('/', HomeControler::class);
 
-Route::get('/post', function () {
-    return 'Post';
-});
+Route::get('/post', [PostController::class, 'index']);
 
-Route::get('/post/{post}/{categoria?}', function ($post, $categoria = null) {
-    if ($categoria)
-	return "Post {$post}  de {$categoria}";
-    return 'Post con número ' . $post;
-});
+Route::get('/post/create', [PostController::class, 'create']);
+
+Route::get('/post/{post}/{categoria?}', [PostController::class, 'categoria']);
