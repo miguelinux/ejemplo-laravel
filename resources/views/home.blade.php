@@ -11,7 +11,12 @@
  <title>Laravel 12</title>
  </head>
 <body>
-<h1>Bienvenido al apagina principal</h1>
+<x-alerta type="warning">
+  <x-slot name="titulo">
+  Este es el titulo slot
+  </x-slot>
+  Este es el slot
+</x-alerta>
 
 </body>
 </html>
