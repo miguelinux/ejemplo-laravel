@@ -8,7 +8,10 @@
  <link rel="stylesheet" href="css/base.css">
  <link rel="icon" href="img/favicon.png">
  -->
- <title>Laravel 12</title>
+
+ @stack('css')
+
+ <title>@yield('title','valor por default')</title>
  </head>
 <body>
 

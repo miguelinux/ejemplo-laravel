@@ -1,5 +1,14 @@
 @extends('layouts.app')
 
+@section('title', 'LaraBELL 12')
+
+@push('css')
+<style>
+body {
+        background-color: #c0c0c0;
+}
+</style>
+@endpush
 
 @section('content')
 
