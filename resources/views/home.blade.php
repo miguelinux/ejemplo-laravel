@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
- <meta charset="utf-8" />
- <meta http-equiv="x-ua-compatible" content="ie=edge" />
- <meta name="viewport" content="width=device-width, initial-scale=1" />
- <!--
- <link rel="stylesheet" href="css/base.css">
- <link rel="icon" href="img/favicon.png">
- -->
- <title>Laravel 12</title>
- </head>
-<body>
+@extends('layouts.app')
+
+
+@section('content')
+
 <x-alert2 type="warning">
   <x-slot name="titulo">
   Este es el titulo slot
@@ -18,6 +10,8 @@
   Este es el slot
 </x-alert2>
 
-</body>
-</html>
+<h1> Seccción nueva de conent</h1>
+
+@endsection
+
 <!-- vi: set shiftwidth=2 tabstop=2 expandtab: -->
